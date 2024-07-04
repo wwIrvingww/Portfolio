@@ -1,0 +1,66 @@
+.Shelf {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.rectangle {
+    position: relative;
+    /* Para posicionar las líneas y el círculo internamente */
+    width: 280px;
+    height: 390px;
+    background-color: #261308;
+    border-width: 2px;
+    border-color: #872917;
+    border-style: solid;
+}
+
+.line {
+    position: absolute;
+    width: 100%;
+    /* Asegura que las líneas horizontales tengan el mismo ancho que el rectángulo */
+    height: 2px;
+    background-color: #872917;
+}
+
+.line1 {
+    top: 33%;
+    /* Posiciona la primera línea horizontalmente a un tercio del rectángulo */
+}
+
+.line2 {
+    top: 66%;
+    /* Posiciona la segunda línea horizontalmente a dos tercios del rectángulo */
+}
+
+.vertical-line {
+    position: absolute;
+    left: 50%;
+    /* Posiciona la línea verticalmente en el centro */
+    bottom: 0;
+    /* Posiciona la línea en la parte inferior */
+    width: 2px;
+    /* Ancho de la línea vertical */
+    height: 33%;
+    /* Altura de la línea vertical para que cubra solo la parte inferior */
+    background-color: #872917;
+}
+
+.circle {
+    position: absolute;
+    /* Para poder posicionar el círculo respecto al contenedor */
+    width: 15px;
+    height: 15px;
+    background-color: #9E6F54;
+    border-radius: 50%;
+    left: calc(50% - 6px + 24px);
+    /* Desplaza el círculo 10vw a la derecha del centro */
+    bottom: calc(33% / 2 );
+    /* Posiciona el círculo a 10px por encima de la línea de en medio */
+}
+
+.circle2 {
+    left: calc(50% - 6px - 24px)
+    /* Desplaza el círculo 10vw a la izquierda del centro */
+}
